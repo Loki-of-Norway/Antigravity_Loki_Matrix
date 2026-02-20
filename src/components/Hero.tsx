@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Code, Zap, Globe } from 'lucide-react';
+import logo from '/loki-logo.png';
 
 const Hero = () => {
   const [quoteIndex, setQuoteIndex] = useState(0);
@@ -78,7 +79,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-[url('https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif')] opacity-10 mix-blend-screen pointer-events-none z-20"></div>
                 
                 <img 
-                  src="/loki-logo.png" 
+                  src={logo} 
                   alt="Loki Avatar" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
